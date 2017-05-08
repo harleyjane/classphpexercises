@@ -1,17 +1,17 @@
+<!DOCTYPE html>
+<html>
 <?php
-if(isset($_POST['submit'])){
-// Fetching variables of the form which travels in URL
-$name = $_POST['name'];
-$email = $_POST['email'];
-$contact = $_POST['contact'];
-$address = $_POST['address'];
-if($name !=''&& $email !=''&& $contact !=''&& $address !='')
+  if($password == $passwordtext)
 {
-//  To redirect form on a particular page
-header("Location: https://phptests-harleyjane.c9users.io/index.php/");
+$_SESSION["userid1"] = $id1;
+header("Location: https://mysite.com/members/index.php"); // redirects
 }
-else{
-?><span><?php echo "Please fill all fields.....!!!!!!!!!!!!";?></span> <?php
+else
+{
+unset($_SESSION["userid1"]);
+$_SESSION["msg"] = "<li>Login Info - Username
+/Password:  Incorrect Combination try again</li>";
 }
-}
+
 ?>
+</html>
