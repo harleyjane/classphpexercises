@@ -12,13 +12,13 @@
   
   $passwordtext = $_GET["password"];
   
-  echo $passwordtext;
+  $password = "4444";
 
   if($password == $passwordtext) {
-      
+    echo "This is the page you are looking for.";
   }
   else {
-      
+     echo "You've entered the wrong password."; 
   }
 
 ?>
