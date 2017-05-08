@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
+  
+    
 <?php
-  if($password == $passwordtext)
-{
-$_SESSION["userid1"] = $id1;
-header("Location: https://mysite.com/members/index.php"); // redirects
-}
-else
-{
-unset($_SESSION["userid1"]);
-$_SESSION["msg"] = "<li>Login Info - Username
-/Password:  Incorrect Combination try again</li>";
-}
+  // $_GET =
+  // [ "q" => "CATS"]
+  
+  // arr = ["cat", "dog", "bird"]
+  // [ 0 => "cat",
+  // 1 => "dog",
+  
+
+  $passwordtext = $_GET["password"];
+  
+  echo $passwordtext;
+
+  if($password == $passwordtext) {
+      
+  }
+  else {
+      
+  }
 
 ?>
+
 </html>
