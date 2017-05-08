@@ -14,13 +14,14 @@
   
   $password = "4444";
 
-  if($password == $passwordtext) {
-    echo "This is the page you are looking for.";
+  if($password == $passwordtext) { ?>
+    <div>
+      THIS HTML IS SHOWING BECAUSE YOU HAVE A GOOD PASSWORD.
+    </div>
+     <?php ;
   }
   else {
      echo "You've entered the wrong password."; 
   }
-
-?>
-
+?>  
 </html>
